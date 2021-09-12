@@ -91,7 +91,7 @@ useEffect(() => {
 }, [contentRef]);
 
 //html
-<div ref={contentRef} />
+<span ref={contentRef} />
 ```
 
 #### Potential Issue with taking html as a string:
