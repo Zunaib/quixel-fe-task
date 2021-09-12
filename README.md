@@ -26,14 +26,14 @@
 - Built re-useable components using AntD.
 - Stitched those components to create views.
 - Wrote some custom styles and media queries for manual responsiveness.
-- Added Redux to the views to Add Blog, View All Blogs, View Single Blog.
-- Added Redux Persist to retain data on refresh.
+- Added Redux to the views i.e. Add Blog, View All Blogs, View Single Blog.
+- Added Redux Persist to retain data of application state.
 - Tested out everything using dummy data in redux store.
 
 ## Guide To Run Application
 
-- Install npm dependencies by executing following in the terminal `npm install`.
-- To see it running, execute `npm run start`.
+- Install npm dependencies by executing following in the terminal `npm install` in the root directory.
+- To see it running, execute `npm run start` in the root directory.
 - Go to `localhost:3000` to see the application running.
 
 ---
@@ -79,7 +79,7 @@ import parse from 'html-react-parser';
 - We can easily take the content html string from our redux store as `blog.content`.
 - Create a ref to the element that content is eventually going to be rendered to.
 - Set the inner html of that ref to be `blog.content`.
-- Its is pretty similar to Solution 1 interns that it also sets the innerHTMl but this way is much safer as,
+- Its is pretty similar to Solution One in terms that it also sets the innerHTMl but this way is much safer as,
 
 ```
 const contentRef = useRef<HTMLSpanElement>(null);
@@ -100,7 +100,7 @@ useEffect(() => {
   - It has the proper structuring required to be rendered / parsed.
   - It has matching opening and closing tags and are in perfect order.
   - Whether the tags used even exist in html or not.
-  - There could be a typo or anything in the html string that it does not recognize.
+  - There could be a typo or anything in the html string that is not recognized when eventually parsed.
 
 #### Possible Solutions:
 
