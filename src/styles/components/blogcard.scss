@@ -1,0 +1,18 @@
+.blog-card {
+  text-align: center;
+  height: 280px;
+  .ant-card-cover {
+    .ant-image {
+      height: 150px;
+      .blog-cover {
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+  }
+  .ant-card-body {
+    .description {
+      color: gray;
+    }
+  }
+}

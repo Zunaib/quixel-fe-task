@@ -1,0 +1,36 @@
+.thumbnail-col {
+  height: 250px;
+  width: 100%;
+  .ant-image {
+    height: inherit;
+    width: inherit;
+    .thumbnail {
+      height: inherit;
+      object-fit: cover;
+      border-radius: 10px;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
+      }
+      &.selected {
+        border: 5px solid rgb(63, 130, 255);
+        &:hover {
+          cursor: pointer;
+          filter: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .thumbnail-col {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .thumbnail-col {
+    height: 100px;
+  }
+}
