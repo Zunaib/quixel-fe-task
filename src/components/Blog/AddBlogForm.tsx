@@ -1,15 +1,8 @@
 import { Form, Row, Col, Input, Button, Image } from 'antd';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { IBlog } from '../../interfaces/Blog';
+import { IAddBlogForm } from '../../interfaces/Blog';
 import { IPicsumImage } from '../../interfaces/PicsumImage';
-
-export interface IAddBlogForm {
-  blog: IBlog,
-  saveBlogHandler: () => void,
-  setBlog: (e: any) => void,
-
-}
 
 const AddBlogForm = ({ blog, saveBlogHandler, setBlog }: IAddBlogForm) => {
 

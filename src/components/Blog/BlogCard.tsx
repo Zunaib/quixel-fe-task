@@ -1,14 +1,9 @@
 import { Card, Image, Typography } from 'antd'
+import { IBlogCard } from '../../interfaces/Blog';
 
-export interface BlogCardProps {
-  id: string;
-  title: string;
-  imageURL: string;
-  content: string;
-  onClick: (id: string) => void;
-}
 
-const BlogCard = ({ id, title, imageURL, content, onClick }: BlogCardProps) => {
+
+const BlogCard = ({ id, title, imageURL, content, onClick }: IBlogCard) => {
 
   const { Title, Paragraph } = Typography;
 

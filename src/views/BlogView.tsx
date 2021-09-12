@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { Col, Image, Row, Typography } from 'antd'
 import { Fragment } from 'react'
 import { useParams } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../app/hooks';
 import { RootState } from '../app/store';
 import { setOpenedBlog } from '../globalState/blogs/blogsSlice';
-import { IBlog } from '../interfaces/Blog';
+import { BlogParams, IBlog } from '../interfaces/Blog';
 
-type BlogParams = {
-  id: string;
-};
+
 
 function BlogView() {
 

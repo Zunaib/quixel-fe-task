@@ -1,10 +1,8 @@
 import { Layout, Menu, Image } from 'antd';
-import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { LayoutProps } from '../../interfaces/Layout';
 
-export interface LayoutProps {
-  children: ReactNode;
-}
+
 
 const AppLayout = ({ children }: LayoutProps) => {
 
